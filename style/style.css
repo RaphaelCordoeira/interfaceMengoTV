@@ -1,0 +1,123 @@
+:root {
+    --1nd: #141414;
+    --2nd: #E50914;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--1nd);
+    font-family: sans-serif;
+    color: white;
+}
+
+/* HEADER */
+
+header .container {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#logo {
+    margin-left: 5px;
+    color: var(--2nd);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    color: #fff;
+}
+
+/* Filme principal */
+
+.principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0.0,.5)100%), url(../assets/img/semfiltro.png);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.principal a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+principal a:hover{
+    color: #fff;
+}
+
+.title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+    background-color: rgba(0,0,0, 50%); 
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1.5s ease-out;
+    margin-right: 8px;
+}
+
+.button:hover{
+    background-color: hsla(0, 2%, 18%, 0.425);
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.principal .container {
+    width: 70%;
+}
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel {
+    margin-top: 5px;
+}
+
+.box-movie {
+    margin: 15px;
+    top:0;
+    position:relative;
+    -webkit-transition: top 0.1s ease-out;
+    -moz-transition: top 0.1s ease-out;
+    -o-transition: top 0.1s ease-out;
+}
+.box-movie:hover {
+    top: -12px;
+}
+
